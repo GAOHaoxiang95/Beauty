@@ -11,4 +11,9 @@ import scrapy
 class BeautyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+	col = 'beauty_im'
+	id = scrapy.Field()
+	url = scrapy.Field()
+	title = scrapy.Field()
+	thumb = scrapy.Field()
+	
