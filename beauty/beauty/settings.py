@@ -64,10 +64,11 @@ MONGO_DB = 'beauty'
 #EXTENSIONS = {
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
-
+IMAGES_STORE = './ii'
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
+    'beauty.pipelines.ImagePipeline': 300,
     'beauty.pipelines.MongoPipeline': 301,
 }
 

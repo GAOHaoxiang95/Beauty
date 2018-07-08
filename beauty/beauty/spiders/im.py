@@ -13,7 +13,7 @@ class ImSpider(scrapy.Spider):
 		data = {'ch':'beauty', 't1':'595', 'eid':'t01aa0205686cc0182e.jpg', 'listtype':'new'}
 		base_url = 'http://images.so.com/zj?'
 		
-		for page in range(1, 21):
+		for page in range(0, 1):
 			data['sn'] = page*30
 			parameters = urllib.parse.urlencode(data)
 			url = base_url + parameters
